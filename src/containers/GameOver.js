@@ -27,10 +27,6 @@ export default class GameOver extends Component {
                 <h2>Game Over</h2>
                 <h3>{`You scored ${this.props.score}`}</h3>
                 <h3>{`Your Highest Score ${getHighScore()}`}</h3>
-
-                <Twitter circle big message={`Yay, I scored ${this.props.score}!, Play tetris with words -:) #TetrisWithWord via @abvishek ${url}`} link={url} />
-                <Facebook circle big link={url} />
-                <Whatsapp solidcircle big message={`Yay, I scored ${this.props.score}!, Play tetris with words -:) #TetrisWithWord`} link={url} />
             </div>
         );
     }
